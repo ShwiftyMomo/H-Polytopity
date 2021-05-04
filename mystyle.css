@@ -1,0 +1,112 @@
+body {
+  background: lightgray;
+  font-family: Optima;
+}
+h1 {
+        text-align: center;
+        font-size: 32pt;
+        color: #000080;
+        margin-bottom: 5px;
+        text-decoration: underline;
+    }
+
+h2 {
+        text-align: center;
+        font-size: 22pt;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+h3 {
+        text-align: center;
+        font-size: 18pt;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+p {
+        font-size: 15pt;
+        color: #000000;
+        margin-bottom: 5px;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+span {
+       font-size: 15pt;
+}
+
+a {
+        text-align: center;
+        font-size: 20pt;
+        margin-bottom: 5px;
+        color: #002888;
+        background: content-box
+    }
+
+a:hover {
+  color: darkblue;
+  }
+
+a:active {
+  color: darkgreen
+  }
+/* Dropdown Button */
+.dropbtn {
+  background-color: gray;
+  color: black;
+  padding: 16px;
+  font-size: 22pt;
+  border: none;
+  font-family: Optima, sans-serif;
+  font-weight: bold;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  text-align: center;
+  display: none;
+  position: center;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 15pt;
+  color: #002888;;
+  margin-bottom: 5px;
+}
+div.fixed {
+  position: fixed;
+  left: 10px;
+  width: 300px;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: gray; color: darkblue;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #555;}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
