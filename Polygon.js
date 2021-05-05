@@ -1,11 +1,20 @@
 class Polygon {
-    constructor(vertexNum) {
+    constructor(vertexNum=4,radius=100,x=0,y=0) {
+        this.x=x;
+        this.y=y;
+        this.radius=radius;
+        this.vertexNum=vertexNum
+    }
 
-        this.x=712;
-        this.y=290;
-        this.size=vertexNum;
-        this.color = [random(1,255),random(1,255),random(1,255)];
-
+    render() {
+        let angle = TWO_PI / this.vertexNum;
+        beginShape();
+        for (let a = 0; a < TWO_PI; a += angle) {
+            let sx = this.x + cos(a) * this.radius;
+            let sy = this.y + sin(a) * this.radius;
+            vertex(sx, sy);
+        }
+        endShape(CLOSE);
     }
   
-  }
+}
